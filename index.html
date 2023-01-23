@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container_main">
+        <div class="container">
+            <div class="center">
+                <div class="main-content">
+                    <div class="main-album main-content">
+                        <img src="black-parade.jpg" alt="black-parade" id="picture" class="mycrm">
+                        <h1 id="title">Mr.Brightside</h1>
+                        <p id="description">The Killers</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="prev music-btn">
+
+                            <a href="#"><img src="previous.png" alt="previous" class="previous-btn imges"></a>
+                        </div>
+                        <div class="pause music-btn">
+                            <a href="#"> <img src="pause.png" alt="pause" class="pause-btn imges"></a>
+                        </div>
+                        <div class="next music-btn">
+                            <a href="#"> <img src="next.png" alt="next" class="next-btn imges"></a>
+                        </div>
+                    </div>
+                    <div class="play-bar">
+                        <div class="length-play"></div>
+                    </div>
+                </div>
+                <div class="side-content">
+                    <h2>Previous tune</h2>
+                    <a class="album-one row" href="#">
+                        <img src="intheend.jpg" alt="intheend" class="img-one album-img">
+                        <div class="title">
+                            <h1>In the end</h1>
+                            <p>Linkin Park</p>
+
+                        </div>
+                    </a>
+                    <h2>Coming up next</h2>
+                    <a class="album-two row" href="#" onclick="firstAlbum()">
+                        <img src="greenday.jpg" alt="greenday" class="img-two album-img">
+                        <div class="title">
+                            <h1>Basket Case</h1>
+                            <p>Green Day</p>
+
+                        </div>
+                    </a>
+                    <a class="album-three row" href="#" onclick="secondAlbum()">
+                        <img src="ride.jpg" alt="Ride" class="img-three album-img">
+                        <div class="title">
+                            <h1>Ride</h1>
+                            <p>Twenty One Pilots</p>
+
+                        </div>
+                    </a>
+                    <a class="album-four row" href="#" onclick="thirdAlbum()">
+                        <img src="september.jpg" alt="september" class="img-four album-img ">
+                        <div class="title">
+                            <h1>Wake Me Up When September Ends</h1>
+                            <p>Green Day</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function firstAlbum() {
+            document.getElementById("picture").outerHTML = "<img src='greenday.jpg'   alt='black-parade' id='picture' class='mycrm'> ";
+            document.getElementById("title").innerHTML = "Basket Case";
+            document.getElementById("description").innerHTML = "Green Day";
+        }
+        function secondAlbum() {
+            document.getElementById("picture").outerHTML = "<img src='ride.jpg'  alt='black-parade' id='picture' class='mycrm'> ";
+            document.getElementById("title").innerHTML = "ride";
+            document.getElementById("description").innerHTML = "Twenty One Pilots";
+        }
+        function thirdAlbum() {
+            document.getElementById("picture").outerHTML = "<img src='september.jpg'   alt='black-parade' id='picture' class='mycrm'> ";
+            document.getElementById("title").innerHTML = "Wake Me Up When September Ends";
+            document.getElementById("description").innerHTML = "Green Day";
+        }
+    </script>
+</body>
+
+</html>
